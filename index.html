@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es"> 
+    <head>
+        <meta charset="UFT-8"> 
+        <title>Desarrollador Web Full Stack junior</title>
+        <link rel="stylesheet" src="style.css">
+    </head>
+
+<body>
+        <header> 
+            <h1> Azucena Alonso </h1> <!-- Aqui comienza mi presentación parte superior derecha -->
+                <nav class=""> <!-- Menú navegación parte superior -->
+                        <a href="index.html"> Inicio </a> 
+                        <a href="#about"> Sobre mí </a> <!-- Enlaces que llevan a sección de la misma página -->
+                        <a href="#skills"> Habilidades </a> 
+                        <a href="#experience"> Experiencia </a>
+                        <a href="projects.html"> Proyectos </a> <!-- Enlace a GIT HUB -->
+                        <a href="#contact"> Contacto </a>
+                 </nav>
+        </header>
+
+        <main>
+            <section id="index.html">
+                <h1>Inicio</h1>
+                <h3>DESARROLLADORA WEB FULL STACK</h3>
+            </section>
+
+            <section id="about">
+                <h2>Sobre mi</h2>
+                    <p>Hola, soy una desarrolladora junior con muchas ganas de aprender y crecer en el mundo del desarrollo web. 
+                        <br>Me formé en un bootcamp intensivo donde aprendí a trabajar con tecnologías actuales, a pensar como parte de un equipo y a enfrentar desafíos reales con soluciones prácticas.
+                        <br>Para mí, programar es mucho más que escribir código: es resolver problemas con elegancia, transformar ideas en soluciones digitales y mejorar un poco más cada día.
+                        <br>No busco ser la mejor desde el primer día, pero sí mejorar con cada línea de código. 
+                        <br> Estoy en el inicio del camino, pero con una mentalidad clara: “Junior, pero con ganas de un senior.”</p>
+            </section>
+         
+            <section id="skills">
+                <h2>Habilidades & Tecnologías</h2>
+                <ul>
+                <li type="circle"> Lenguajes de Programación </li>
+                    <dd>HTML</dd>
+                    <dd>CSS</dd>     
+                    <dd>JavaScript</dd>
+                    <dd>PHP</dd><br>
+                    
+                 <li type="circle"> Frameworks & Librerías </li>    
+                    <dd>REACT</dd>
+                    <dd>ANGULAR</dd> <br>
+
+                 <li type="circle"> Herramientas de Desarrollo</li>
+                    <dd>HTML</dd>
+                    <dd>CSS</dd>     
+                    <dd>JavaScript</dd>
+                    <dd>PHP</dd>
+                  
+                 <li type="circle"> Lenguajes de Programación </li>
+                    <dd>HTML</dd>
+                    <dd>CSS</dd>     
+                    <dd>JavaScript</dd>
+                    <dd>PHP</dd><br>
+                
+                 <li type="circle"> Bases de Datos </li>
+                    <dd>MySQL</dd>
+                    <dd>MongoDB</dd> <br>    
+               
+                 <li type="circle"> Control de Versiones </li>
+                    <dd>Git</dd>
+                    <dd>GitHub</dd>
+                    <dd>GitLab</dd> <br>                  
+                 </ul>
+                 
+                    
+            </section>
+
+            <section id="experience">
+                <h2>Experiencia</h2>
+                    <p>Aunque todavía no tengo experiencia laboral en el sector, estoy completamente enfocada en formarme, crecer y dar lo mejor de mí.<br>
+                    Soy una persona comprometida, con muchas ganas de aprender, mejorar cada día y aportar valor allá donde esté. <br>
+                    Creo firmemente que la actitud y el esfuerzo pueden marcar la diferencia, y estoy preparada para asumir nuevos retos. Para que piedas ver todo mi potencial, <a href="projects.html">este enlace</a> puedes ver todos mis desarrollos. <br> 
+                    Voy aprovechar cada oportunidad para seguir creciendo y llegar a ser una gran senior.</p>
+            </section>
+
+             <br>
+            <section id="contact">
+         <!-- Estilos CSS para el form -->
+            <style> 
+                body {
+                font-family: 'Segoe UI', sans-serif;
+                background-color: #f4f4f4;
+                padding: 40px;
+                }
+                .form-container {
+                background: #ffffff;
+                padding: 30px;
+                border-radius: 12px;
+                max-width: 500px;
+                margin: auto;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                }
+                h2 {
+                text-align: center;
+                margin-bottom: 20px;
+                color: #333;
+                }
+                label {
+                display: block;
+                margin-top: 15px;
+                color: #555;
+                }
+                input, textarea {
+                width: 100%;
+                padding: 10px;
+                margin-top: 5px;
+                border-radius: 6px;
+                border: 1px solid #ccc;
+                font-size: 14px;
+                background-color: #fafafa;
+                }
+                button {
+                width: 100%;
+                margin-top: 25px;
+                padding: 12px;
+                background-color: #1d72b8;
+                color: white;
+                border: none;
+                border-radius: 6px;
+                font-size: 16px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                }
+                button:hover {
+                background-color: #155d8a;
+                }
+                .mensaje-enviado {
+                text-align: center;
+                color: #28a745;
+                font-weight: bold;
+                margin-top: 20px;
+                display: none;
+                }
+            </style>
+        </head>
+       
+        <div class="form-container">
+            <h2>Contacta conmigo </h2>
+            <div class="contacto-info">
+            <p><strong>Teléfono:</strong> +34 635 438 746</p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/srtalonso" target="_blank"> @srtalonso </a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/tuusuario" target="_blank">linkedin.com/in/tuusuario</a></p>
+        </div>
+
+          <h2>Si lo prefieres, contactaré yo contigo</h2>
+            <form onsubmit="return mostrarMensaje()"> <!-- Inicio form de contacto -->
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Escribe tu nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" placeholder="ejemplo@correo.com" required>
+
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" placeholder="¿Sobre qué quieres hablar?" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+                <div id="mensaje-exito" class="mensaje-enviado">
+                ¡Gracias por tu mensaje! Te responderé lo antes posible. </div>
+        </div>
+
+        <script>
+            function mostrarMensaje() {
+            document.getElementById("mensaje-exito").style.display = "block";
+            return false; // evita el envío real
+            }
+        </script>
+
+        </main>
+</body>
+
+<footer>
+    <p>&copy; GRACIAS POR VERME </p>
+</footer>
+
+</html>
